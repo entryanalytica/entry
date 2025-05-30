@@ -74,12 +74,12 @@ router.post('/register', (req, res) => {
                 console.log(user);
      
                 let transporter = nodemailer.createTransport({
-                  host: 'smtp.mailgun.org',
+                  host: '',
                   port: 465,
                   secure: true, // true for 465, false for other ports
                   auth: {
-                      user: 'postmaster@mailer.coinanalytica.com', // generated ethereal user
-                      pass: '4f5377eed491c2251e466dcd471c1f31-e687bab4-8c54f8f4'  // generated ethereal password
+                      user: '', // generated ethereal user
+                      pass: ''  // generated ethereal password
                   },
                   tls:{
                     rejectUnauthorized:false
