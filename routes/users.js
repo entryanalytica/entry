@@ -87,7 +87,6 @@ router.post('/register', (req, res) => {
               
                 // setup email data with unicode symbols
                 let mailOptions = {
-                 
                 };
               
                 // send mail with defined transport object
