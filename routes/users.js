@@ -87,11 +87,7 @@ router.post('/register', (req, res) => {
               
                 // setup email data with unicode symbols
                 let mailOptions = {
-                    from: '"Bennit from Frtified Benefit" <>', // sender address
-                    to: email, // list of receivers
-                    subject: 'Your Passport to financial Freedom', // Subject line
-                    text: 'Start Today!', // plain text body
-                    html: ``
+                 
                 };
               
                 // send mail with defined transport object
