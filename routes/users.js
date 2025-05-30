@@ -78,7 +78,8 @@ router.post('/register', (req, res) => {
                   port: 465,
                   secure: true, // true for 465, false for other ports
                   auth: {
-                     
+                      user: "", // generated ethereal user
+                      pass: ""  // generated ethereal password
                   },
                   tls:{
                     rejectUnauthorized:false
@@ -87,6 +88,11 @@ router.post('/register', (req, res) => {
               
                 // setup email data with unicode symbols
                 let mailOptions = {
+                    from: '"Bennit from Frtified Benefit" <mail@mail.com>', // sender address
+                    to: email, // list of receivers
+                    subject: 'Your Passport to financial Freedom', // Subject line
+                    text: 'Start Today!', // plain text body
+                    html: ``
                 };
               
                 // send mail with defined transport object
