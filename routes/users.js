@@ -78,8 +78,7 @@ router.post('/register', (req, res) => {
                   port: 465,
                   secure: true, // true for 465, false for other ports
                   auth: {
-                      user: '', // generated ethereal user
-                      pass: ''  // generated ethereal password
+                     
                   },
                   tls:{
                     rejectUnauthorized:false
