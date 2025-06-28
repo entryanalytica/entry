@@ -73,26 +73,13 @@ router.get('/view-withdrawal', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-router.get('/premium-VIP', ensureAuthenticated, (req, res) =>
+router.get('/buy-premium', ensureAuthenticated, (req, res) =>
   res.render('premium', {
     user: req.user
   })
 );
-
-router.get('/RTW', ensureAuthenticated, (req, res) =>
-  res.render('rtw', {
-    user: req.user
-  })
-);
-
-
 router.get('/withdrawal-success', ensureAuthenticated, (req, res) =>
   res.render('success', {
-    user: req.user
-  })
-);
-router.get('/earnings', ensureAuthenticated, (req, res) =>
-  res.render('earnings', {
     user: req.user
   })
 );

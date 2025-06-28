@@ -47,7 +47,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="/invest" aria-expanded="false">
                 <span>
-                  <i class="ti ti-shopping-cart"></i>
+                  <i class="ti ti-chart-bar"></i>
                 </span>
                 <span class="hide-menu">Make an Investment</span>
               </a>
@@ -129,7 +129,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="../assets/images/profile/user.png" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -148,88 +148,36 @@
       </header>
       <!--  Header End -->
       <div class="container-fluid">
-              <div class="row">
-                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Deposit Funds</h3>
-                  <h6 class="font-weight-normal mb-0">Make a deposit directly into your account </h6>
-                </div>
-             
-              </div>
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-3">
-                <!-- Total Investment -->
-                <div class="card overflow-hidden">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-9 fw-semibold">Total Deposit</h5>
-                    <div class="row align-items-center">
-                      <div class="col-8">
-                        <h4 class="fw-semibold mb-3">$12,458</h4>
-                        <div class="d-flex align-items-center mb-3">
-                          <span
-                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+15%</p>
-                          <p class="fs-3 mb-0">last month</p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <div class="me-4">
-                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">BTC</span>
-                          </div>
-                          <div>
-                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">ETH</span>
-                          </div>
-                        </div>
-                      </div>
-                    
+        <!-- Dashboard Section -->
+        <div id="dashboard" class="row">
+         
+            <div class="col-lg-8 d-flex align-items-strech">
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                    <div class="mb-3 mb-sm-0">
+                      <h5 class="card-title fw-semibold">Investment Performance</h5>
+                    </div>
+                    <div>
+                      <select class="form-select">
+                        <option value="1">Last 7 Days</option>
+                      </select>
                     </div>
                   </div>
+                  <div id="chart"></div>
                 </div>
               </div>
-              <div class="col-lg-3">
-              </div>
             </div>
-          </div>
-          <div class="tab-content">
-            <div class="tab-pane tabs-animation fade active show" id="tab-content-0" role="tabpanel">
-                <div class="main-card mb-3 card">
-                    <div class="card-body"><h5 class="card-title">Make a deposit Funds</h5>
-                        <form method="GET" action="/dashboard">
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <div class="position-relative form-group"><label for="Amount" class="">Amount</label><input name="Amount" id="Amount" placeholder="eg: $200" type="number" class="form-control"></div>
-                                </div>
-                               
-                                <div class="col-md-6">
-                                    <div class="position-relative form-group"><label for="password" class=""> Password</label><input name="password" id="password" type="password" class="form-control" value=""></div>
-                                </div>
-                            </div>
-                            
-                            <br><br>
-                            <!-- Button trigger modal -->
-                            <a type="button" class="btn mr-2 mb-2 btn-primary"  href="/select-coin-19843667164">
-                               Make deposit
-                            </a>
-                        
-                        </div>
-                        </form>
-                    </div>
-                </div>
-               
-            </div>
-        
+        </div>
 </div>
-      <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-      <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="../assets/js/sidebarmenu.js"></script>
-      <script src="../assets/js/app.min.js"></script>
-      <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-      <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-      <script src="../assets/js/dashboard.js"></script>
-      
-      </body>
-      
-      </html>
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/sidebarmenu.js"></script>
+<script src="../assets/js/app.min.js"></script>
+<script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

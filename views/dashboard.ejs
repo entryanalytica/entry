@@ -18,8 +18,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          <a href="/" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/logo.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -33,7 +33,7 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#dashboard" aria-expanded="false">
+              <a class="sidebar-link" href="/" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -42,33 +42,70 @@
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">ACTIONS</span>
+              <span class="hide-menu">Investing</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#invest" aria-expanded="false">
+              <a class="sidebar-link" href="/invest" aria-expanded="false">
                 <span>
-                  <i class="ti ti-arrow-up"></i>
+                  <i class="ti ti-chart-bar"></i>
                 </span>
-                <span class="hide-menu">Invest</span>
+                <span class="hide-menu">Make an Investment</span>
+              </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="/deposit-funds" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-wallet"></i>
+                  </span>
+                  <span class="hide-menu">Make a Deposit</span>
+                </a>
+                </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Membership</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/buy-premium" aria-expanded="false">
+                <span>
+                  <i class="ti ti-crown"></i>
+                </span>
+                <span class="hide-menu">Premium Membership</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Withdrawals</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/withdrawal" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cash"></i>
+                </span>
+                <span class="hide-menu">Withdraw Funds</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#withdraw" aria-expanded="false">
+              <a class="sidebar-link" href="/view-withdrawal" aria-expanded="false">
                 <span>
-                  <i class="ti ti-arrow-down"></i>
+                  <i class="ti ti-calendar"></i>
                 </span>
-                <span class="hide-menu">Withdraw</span>
+                <span class="hide-menu">Withdrawal History</span>
               </a>
             </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Support</span>
+            </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#profile" aria-expanded="false">
+              <a class="sidebar-link" href="/help-desk" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user"></i>
+                  <i class="ti ti-help"></i>
                 </span>
-                <span class="hide-menu">Profile</span>
+                <span class="hide-menu">Help Desk</span>
               </a>
             </li>
           </ul>
+          
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -86,35 +123,22 @@
                 <i class="ti ti-menu-2"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="../assets/images/profile/user.png" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="#profile" class="d-flex align-items-center gap-2 dropdown-item">
+                    <a href="/profile" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3">My Profile</p>
                     </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-settings fs-6"></i>
-                      <p class="mb-0 fs-3">Settings</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-help fs-6"></i>
-                      <p class="mb-0 fs-3">Support</p>
-                    </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    
+                    <a href="/users/logout" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>
@@ -126,71 +150,54 @@
       <div class="container-fluid">
         <!-- Dashboard Section -->
         <div id="dashboard" class="row">
-          <div class="col-lg-8 d-flex align-items-strech">
-            <div class="card w-100">
-              <div class="card-body">
-                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
-                  <div class="mb-3 mb-sm-0">
-                    <h5 class="card-title fw-semibold">Investment Performance</h5>
-                  </div>
-                  <div>
-                    <select class="form-select">
-                      <option value="1">Last 7 Days</option>
-                      <option value="2">Last 30 Days</option>
-                      <option value="3">Last 90 Days</option>
-                      <option value="4">All Time</option>
-                    </select>
-                  </div>
-                </div>
-                <div id="chart"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
+         
+          <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-3">
                 <!-- Total Investment -->
                 <div class="card overflow-hidden">
                   <div class="card-body p-4">
-                    <h5 class="card-title mb-9 fw-semibold">Total Investment</h5>
+                    <h5 class="card-title mb-1 fw-semibold">Total Deposit</h5>
+                    <p class="text-dark mb-9 fs-3 mb-0">Available balance and equity</p>
                     <div class="row align-items-center">
-                      <div class="col-8">
+                      <div class="col-12">
                         <h4 class="fw-semibold mb-3">$12,458</h4>
                         <div class="d-flex align-items-center mb-3">
                           <span
                             class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
+                            <i class="ti ti-arrow-up-right text-success"></i>
                           </span>
                           <p class="text-dark me-1 fs-3 mb-0">+15%</p>
                           <p class="fs-3 mb-0">last month</p>
                         </div>
                         <div class="d-flex align-items-center">
                           <div class="me-4">
-                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="round-8 bg-success rounded-circle me-2 d-inline-block"></span>
                             <span class="fs-2">BTC</span>
                           </div>
-                          <div>
-                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
+                          <div  class="me-4">
+                            <span class="round-8 bg-success rounded-circle me-2 d-inline-block"></span>
                             <span class="fs-2">ETH</span>
+                          </div>
+                          <div>
+                            <span class="round-8 bg-success rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-2">USDT</span>
                           </div>
                         </div>
                       </div>
-                      <div class="col-4">
-                        <div class="d-flex justify-content-center">
-                          <div id="breakup"></div>
-                        </div>
-                      </div>
+                    
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-3">
                 <!-- Total Earnings -->
                 <div class="card">
                   <div class="card-body">
                     <div class="row alig n-items-start">
-                      <div class="col-8">
-                        <h5 class="card-title mb-9 fw-semibold"> Total Earnings </h5>
+                      <div class="col-12">
+                        <h4 class="card-title mb-1 fw-semibold">Total Earnings </h4>
+                        <p class="text-dark mb-9 fs-3 mb-0">account earnnings and Profit</p>
                         <h4 class="fw-semibold mb-3">$3,820</h4>
                         <div class="d-flex align-items-center pb-1">
                           <span
@@ -198,458 +205,100 @@
                             <i class="ti ti-arrow-up-left text-success"></i>
                           </span>
                           <p class="text-dark me-1 fs-3 mb-0">+12%</p>
-                          <p class="fs-3 mb-0">last month</p>
+                          <p class="fs-3 mb-0">last week</p>
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="d-flex justify-content-end">
-                          <div
-                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-currency-bitcoin fs-6"></i>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div id="earning"></div>
+                 
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <!-- Total Earnings -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row alig n-items-start">
+                      <div class="col-12">
+                        <h5 class="card-title mb-1 fw-semibold">Total Withdrawals</h5>
+                        <p class="text-dark mb-9 fs-3 mb-0">account returns and Withdrawal</p>
+                        <h4 class="fw-semibold mb-3">$3,820</h4>
+                        <div class="d-flex align-items-center pb-1">
+                          <span
+                            class="me-2 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-arrow-up-left text-success"></i>
+                          </span>
+                          <p class="text-dark me-1 fs-3 mb-0">+12%</p>
+                          <p class="fs-3 mb-0">last week</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <!-- Total Earnings -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row alig n-items-start">
+                      <div class="col-12">
+                        <h5 class="card-title mb-1 fw-semibold">Plan Type</h5>
+                        <p class="text-dark mb-9 fs-3 mb-0">Current investing plan</p>
+                        <h4 class="fw-semibold mb-3">$3,820</h4>
+                        <div class="d-flex align-items-center pb-1">
+                         
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="card w-100">
-              <div class="card-body p-4">
-                <div class="mb-4">
-                  <h5 class="card-title fw-semibold">Recent Transactions</h5>
-                </div>
-                <ul class="timeline-widget mb-0 position-relative mb-n5">
-                  <li class="timeline-item d-flex position-relative overflow-hidden">
-                    <div class="timeline-time text-dark flex-shrink-0 text-end">Today</div>
-                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                      <span class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
-                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+        <div id="dashboard" class="row">
+            <div class="col-lg-8 d-flex align-items-strech">
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                    <div class="mb-3 mb-sm-0">
+                      <h5 class="card-title fw-semibold">Investment Performance</h5>
                     </div>
-                    <div class="timeline-desc fs-3 text-dark mt-n1">Deposit of $1,000 received</div>
-                  </li>
-                  <li class="timeline-item d-flex position-relative overflow-hidden">
-                    <div class="timeline-time text-dark flex-shrink-0 text-end">Yesterday</div>
-                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                      <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
-                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    <div>
+                      <select class="form-select">
+                        <option value="1">Last 7 Days</option>
+                      </select>
                     </div>
-                    <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Earnings payout <a
-                        href="javascript:void(0)" class="text-primary d-block fw-normal">$245.60</a>
-                    </div>
-                  </li>
-                  <li class="timeline-item d-flex position-relative overflow-hidden">
-                    <div class="timeline-time text-dark flex-shrink-0 text-end">2 days ago</div>
-                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                      <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
-                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                    </div>
-                    <div class="timeline-desc fs-3 text-dark mt-n1">Investment in Gold Plan</div>
-                  </li>
-                  <li class="timeline-item d-flex position-relative overflow-hidden">
-                    <div class="timeline-time text-dark flex-shrink-0 text-end">5 days ago</div>
-                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
-                      <span class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
-                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
-                    </div>
-                    <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Withdrawal processed <a
-                        href="javascript:void(0)" class="text-primary d-block fw-normal">$500.00</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="card w-100">
-              <div class="card-body p-4">
-                <h5 class="card-title fw-semibold mb-4">Investment Plans</h5>
-                <div class="table-responsive">
-                  <table class="table text-nowrap mb-0 align-middle">
-                    <thead class="text-dark fs-4">
-                      <tr>
-                        <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Plan</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Daily ROI</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Duration</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Min Deposit</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Your Status</h6>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">Starter</h6></td>
-                        <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">1.5%</h6>
-                            <span class="fw-normal">Daily</span>                          
-                        </td>
-                        <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">30 Days</p>
-                        </td>
-                        <td class="border-bottom-0">
-                          <div class="d-flex align-items-center gap-2">
-                            <span class="fw-semibold">$100</span>
-                          </div>
-                        </td>
-                        <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4"><span class="badge bg-success">Active</span></h6>
-                        </td>
-                      </tr> 
-                      <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">Silver</h6></td>
-                        <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">2.2%</h6>
-                            <span class="fw-normal">Daily</span>                          
-                        </td>
-                        <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">45 Days</p>
-                        </td>
-                        <td class="border-bottom-0">
-                          <div class="d-flex align-items-center gap-2">
-                            <span class="fw-semibold">$1,000</span>
-                          </div>
-                        </td>
-                        <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4"><span class="badge bg-light-secondary">Available</span></h6>
-                        </td>
-                      </tr> 
-                      <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">Gold</h6></td>
-                        <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">3.5%</h6>
-                            <span class="fw-normal">Daily</span>                          
-                        </td>
-                        <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">60 Days</p>
-                        </td>
-                        <td class="border-bottom-0">
-                          <div class="d-flex align-items-center gap-2">
-                            <span class="fw-semibold">$5,000</span>
-                          </div>
-                        </td>
-                        <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4"><span class="badge bg-light-secondary">Available</span></h6>
-                        </td>
-                      </tr>      
-                      <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">Platinum</h6></td>
-                        <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">5.0%</h6>
-                            <span class="fw-normal">Daily</span>                          
-                        </td>
-                        <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">90 Days</p>
-                        </td>
-                        <td class="border-bottom-0">
-                          <div class="d-flex align-items-center gap-2">
-                            <span class="fw-semibold">$10,000</span>
-                          </div>
-                        </td>
-                        <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4"><span class="badge bg-light-secondary">Available</span></h6>
-                        </td>
-                      </tr>                       
-                    </tbody>
-                  </table>
+                  </div>
+                  <div id="chart"></div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
-        
-        <!-- Invest Section -->
-        <div id="invest" class="row" style="display:none;">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Make New Investment</h5>
-                <div class="row">
-                  <div class="col-lg-8">
-                    <form>
-                      <div class="mb-3">
-                        <label for="investmentPlan" class="form-label">Select Investment Plan</label>
-                        <select class="form-select" id="investmentPlan">
-                          <option value="starter">Starter Plan (1.5% daily for 30 days)</option>
-                          <option value="silver">Silver Plan (2.2% daily for 45 days)</option>
-                          <option value="gold">Gold Plan (3.5% daily for 60 days)</option>
-                          <option value="platinum">Platinum Plan (5.0% daily for 90 days)</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="investmentAmount" class="form-label">Investment Amount (USD)</label>
-                        <input type="number" class="form-control" id="investmentAmount" placeholder="Enter amount">
-                      </div>
-                      <div class="mb-3">
-                        <label for="paymentMethod" class="form-label">Payment Method</label>
-                        <select class="form-select" id="paymentMethod">
-                          <option value="btc">Bitcoin (BTC)</option>
-                          <option value="eth">Ethereum (ETH)</option>
-                          <option value="usdt">USDT (TRC20)</option>
-                          <option value="bank">Bank Transfer</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="walletAddress" class="form-label">Your Wallet Address</label>
-                        <input type="text" class="form-control" id="walletAddress" placeholder="Enter your wallet address">
-                      </div>
-                      <button type="submit" class="btn btn-primary">Confirm Investment</button>
-                    </form>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card bg-light-primary">
-                      <div class="card-body">
-                        <h5 class="card-title">Investment Summary</h5>
-                        <div class="d-flex justify-content-between mb-2">
-                          <span>Selected Plan:</span>
-                          <span class="fw-semibold">Starter</span>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                          <span>Daily ROI:</span>
-                          <span class="fw-semibold">1.5%</span>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                          <span>Duration:</span>
-                          <span class="fw-semibold">30 Days</span>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                          <span>Total ROI:</span>
-                          <span class="fw-semibold">45%</span>
-                        </div>
-                        <div class="d-flex justify-content-between mb-4">
-                          <span>Principal Return:</span>
-                          <span class="fw-semibold">Yes</span>
-                        </div>
-                        <div class="alert alert-info">
-                          Minimum investment: $100
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Withdraw Section -->
-        <div id="withdraw" class="row" style="display:none;">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Request Withdrawal</h5>
-                <div class="row">
-                  <div class="col-lg-8">
-                    <form>
-                      <div class="mb-3">
-                        <label for="withdrawalAmount" class="form-label">Withdrawal Amount (USD)</label>
-                        <input type="number" class="form-control" id="withdrawalAmount" placeholder="Enter amount">
-                        <small class="text-muted">Available balance: $3,820</small>
-                      </div>
-                      <div class="mb-3">
-                        <label for="withdrawalMethod" class="form-label">Withdrawal Method</label>
-                        <select class="form-select" id="withdrawalMethod">
-                          <option value="btc">Bitcoin (BTC)</option>
-                          <option value="eth">Ethereum (ETH)</option>
-                          <option value="usdt">USDT (TRC20)</option>
-                          <option value="bank">Bank Transfer</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="withdrawalWallet" class="form-label">Withdrawal Wallet Address</label>
-                        <input type="text" class="form-control" id="withdrawalWallet" placeholder="Enter wallet address">
-                      </div>
-                      <div class="mb-3">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="termsCheck">
-                          <label class="form-check-label" for="termsCheck">
-                            I agree to the terms and conditions
-                          </label>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Request Withdrawal</button>
-                    </form>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card bg-light-primary">
-                      <div class="card-body">
-                        <h5 class="card-title">Withdrawal Information</h5>
-                        <div class="alert alert-warning">
-                          <h6 class="alert-heading">Important Notice</h6>
-                          <p>Withdrawals are processed within 24-48 hours. Minimum withdrawal amount is $50.</p>
-                        </div>
-                        <h6 class="fw-semibold">Fee Structure</h6>
-                        <ul class="list-unstyled">
-                          <li class="mb-2">Crypto withdrawals: 1% fee</li>
-                          <li class="mb-2">Bank transfers: $25 flat fee</li>
-                          <li>Processing time: 1-2 business days</li>
-                        </ul>
-                        <h6 class="fw-semibold mt-3">Recent Withdrawals</h6>
-                        <ul class="list-unstyled">
-                          <li class="mb-1">$500 - BTC - 2 days ago</li>
-                          <li class="mb-1">$250 - ETH - 1 week ago</li>
-                          <li>$100 - USDT - 2 weeks ago</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Profile Section -->
-        <div id="profile" class="row" style="display:none;">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Your Profile</h5>
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <img src="../assets/images/profile/user-1.jpg" alt="Profile" class="rounded-circle mb-3" width="150" height="150">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="text-muted">Member since: Jan 2023</p>
-                        <div class="d-flex justify-content-center gap-3">
-                          <button class="btn btn-primary">Edit Profile</button>
-                          <button class="btn btn-outline-secondary">Change Photo</button>
-                        </div>
-                        <hr>
-                        <div class="text-start">
-                          <h6 class="fw-semibold">Account Verification</h6>
-                          <div class="d-flex justify-content-between mb-2">
-                            <span>Email:</span>
-                            <span class="badge bg-success">Verified</span>
-                          </div>
-                          <div class="d-flex justify-content-between mb-2">
-                            <span>Phone:</span>
-                            <span class="badge bg-success">Verified</span>
-                          </div>
-                          <div class="d-flex justify-content-between">
-                            <span>KYC:</span>
-                            <span class="badge bg-warning">Pending</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title mb-4">Account Information</h5>
-                        <form>
-                          <div class="row mb-3">
-                            <div class="col-md-6">
-                              <label for="firstName" class="form-label">First Name</label>
-                              <input type="text" class="form-control" id="firstName" value="John">
-                            </div>
-                            <div class="col-md-6">
-                              <label for="lastName" class="form-label">Last Name</label>
-                              <input type="text" class="form-control" id="lastName" value="Doe">
-                            </div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" value="john.doe@example.com">
-                          </div>
-                          <div class="mb-3">
-                            <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" id="phone" value="+1 (555) 123-4567">
-                          </div>
-                          <div class="mb-3">
-                            <label for="country" class="form-label">Country</label>
-                            <select class="form-select" id="country">
-                              <option selected>United States</option>
-                              <option>Canada</option>
-                              <option>United Kingdom</option>
-                              <option>Australia</option>
-                            </select>
-                          </div>
-                          <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" value="123 Main St">
-                          </div>
-                          <div class="row mb-3">
-                            <div class="col-md-4">
-                              <label for="city" class="form-label">City</label>
-                              <input type="text" class="form-control" id="city" value="New York">
-                            </div>
-                            <div class="col-md-4">
-                              <label for="state" class="form-label">State</label>
-                              <input type="text" class="form-control" id="state" value="NY">
-                            </div>
-                            <div class="col-md-4">
-                              <label for="zip" class="form-label">ZIP</label>
-                              <input type="text" class="form-control" id="zip" value="10001">
-                            </div>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Update Profile</button>
-                        </form>
-                        <hr class="my-4">
-                        <h5 class="card-title mb-4">Security Settings</h5>
-                        <div class="mb-3">
-                          <label class="form-label">Two-Factor Authentication</label>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <span>Status: <span class="text-danger">Disabled</span></span>
-                            <button class="btn btn-sm btn-outline-primary">Enable 2FA</button>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <button class="btn btn-outline-secondary">Change Password</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-    </div>
-  </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="../assets/js/dashboard.js"></script>
-  <script>
-    // Navigation between sections
-    $(document).ready(function() {
-      // Show dashboard by default
-      $('#dashboard').show();
-      
-      // Handle sidebar clicks
-      $('.sidebar-link').click(function(e) {
-        e.preventDefault();
-        var target = $(this).attr('href');
-        
-        // Hide all sections
-        $('.row[id]').hide();
-        
-        // Show target section
-        $(target).show();
-      });
-    });
-  </script>
+</div>
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/sidebarmenu.js"></script>
+<script src="../assets/js/app.min.js"></script>
+<script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+
 </body>
 
 </html>
