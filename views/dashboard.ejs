@@ -150,9 +150,21 @@
       <div class="container-fluid">
         <!-- Dashboard Section -->
         <div id="dashboard" class="row">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h2 class="font-weight-bold">Welcome Back, <%= " " 
+                  + user.first_name %></h2>
+                  <h6 class="font-weight-normal mb-0">General overview of Earnings, Transaction and Investment </h6>
+                </div>
+             
+              </div>
+            </div>
+          </div>
          
           <div class="col-lg-12">
-            <div class="row">
+            <div class="row mt-4">
               <div class="col-lg-3">
                 <!-- Total Investment -->
                 <div class="card overflow-hidden">
@@ -161,13 +173,13 @@
                     <p class="text-dark mb-9 fs-3 mb-0">Available balance and equity</p>
                     <div class="row align-items-center">
                       <div class="col-12">
-                        <h4 class="fw-semibold mb-3">$12,458</h4>
+                        <h4 class="fw-semibold mb-3">$ <%= " " + user.totaldeposit %></h4>
                         <div class="d-flex align-items-center mb-3">
                           <span
                             class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
                             <i class="ti ti-arrow-up-right text-success"></i>
                           </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+15%</p>
+                          <p class="text-dark me-1 fs-3 mb-0">+0%</p>
                           <p class="fs-3 mb-0">last month</p>
                         </div>
                         <div class="d-flex align-items-center">
@@ -198,13 +210,13 @@
                       <div class="col-12">
                         <h4 class="card-title mb-1 fw-semibold">Total Earnings </h4>
                         <p class="text-dark mb-9 fs-3 mb-0">account earnnings and Profit</p>
-                        <h4 class="fw-semibold mb-3">$3,820</h4>
+                        <h4 class="fw-semibold mb-3">$ <%= " " + user.totalearnings %></h4>
                         <div class="d-flex align-items-center pb-1">
                           <span
                             class="me-2 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
+                            <i class="ti ti-arrow-up-right text-success"></i>
                           </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+12%</p>
+                          <p class="text-dark me-1 fs-3 mb-0">+0%</p>
                           <p class="fs-3 mb-0">last week</p>
                         </div>
                       </div>
@@ -225,13 +237,13 @@
                       <div class="col-12">
                         <h5 class="card-title mb-1 fw-semibold">Total Withdrawals</h5>
                         <p class="text-dark mb-9 fs-3 mb-0">account returns and Withdrawal</p>
-                        <h4 class="fw-semibold mb-3">$3,820</h4>
+                        <h4 class="fw-semibold mb-3">$ <%= " " + user.withdrawals %></h4>
                         <div class="d-flex align-items-center pb-1">
                           <span
                             class="me-2 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
+                            <i class="ti ti-arrow-up-right text-success"></i>
                           </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+12%</p>
+                          <p class="text-dark me-1 fs-3 mb-0">+0%</p>
                           <p class="fs-3 mb-0">last week</p>
                         </div>
                       </div>
@@ -253,7 +265,7 @@
                       <div class="col-12">
                         <h5 class="card-title mb-1 fw-semibold">Plan Type</h5>
                         <p class="text-dark mb-9 fs-3 mb-0">Current investing plan</p>
-                        <h4 class="fw-semibold mb-3">$3,820</h4>
+                        <h4 class="fw-semibold mb-3"><%= user.plantype %></h4>
                         <div class="d-flex align-items-center pb-1">
                          
                         </div>

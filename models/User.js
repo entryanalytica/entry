@@ -21,15 +21,11 @@ first_name: {
     type: String,
     required: true
   },
-  availbalance:{
+  totaldeposit:{
     type: String,
     default: '00.00'
   },
-  activedeposit:{
-    type: String,
-    default: '00.00'
-  },
-  activeinvestment:{
+  totalearnings:{
     type: String,
     default: '00.00'
   },
